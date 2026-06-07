@@ -3,63 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zoli | Premium Painting, Decorating & Handyman Services</title>
+    <title>Zoli | Premium Painting & Decorating</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="loading-screen">
+        <div class="loader"></div>
+    </div>
 
     <header>
         <div class="logo">ZOLI.</div>
-        <nav>
+        
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <nav id="nav-menu">
             <ul>
+                <li><a href="#overview">Overview</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact" class="nav-btn">Get a Quote</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="hero">
-        <h1>High-Quality Painting, Decorating & Property Maintenance</h1>
-        <p>Reliable, professional service across London. From small repairs to full refurbishments.</p>
-        <a href="#contact" class="main-btn">Available for Work</a>
-    </section>
+    <main>
+        <section id="overview" class="split-layout fade-in">
+            <div class="content-left">
+                <h1>Flawless Finishes</h1>
+                <h3>Operating in Islington, London • Since 2017</h3>
+                <p>Reliable and experienced painter, decorator, and handyman offering high-quality work across London. I specialise in everything from small repairs to full property refurbishments and turnkey renovations. I take pride in delivering work that lasts — not quick fixes.</p>
+                <a href="#contact" class="cta-btn">Available Now</a>
+            </div>
+            <div class="image-right">
+                <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=1000&q=80" alt="Premium Painting Overview">
+            </div>
+        </section>
 
-    <section id="services" class="section-padding">
-        <h2>Expert Services</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <h3>Painting & Decoration</h3>
-                <p>Interior and exterior finishes with a focus on clean, sharp lines and durability.</p>
+        <section id="services" class="split-layout fade-in">
+            <div class="content-left">
+                <h2>What I Do Best</h2>
+                <ul class="premium-list">
+                    <li>Painting & Decorating (Interior/Exterior)</li>
+                    <li>Flooring & Tiling Installations</li>
+                    <li>Full Refurbishments & Renovations</li>
+                    <li>End of Tenancy Refreshes</li>
+                    <li>General Handyman & Maintenance</li>
+                </ul>
             </div>
-            <div class="service-card">
-                <h3>Flooring & Tiling</h3>
-                <p>Precise installation for floors and walls, ensuring a perfect finish every time.</p>
+            <div class="image-right">
+                <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1000&q=80" alt="Decorating Services">
             </div>
-            <div class="service-card">
-                <h3>Full Refurbishments</h3>
-                <p>From end-of-tenancy refreshes to complete renovation projects.</p>
-            </div>
-            <div class="service-card">
-                <h3>Handyman Work</h3>
-                <p>General property maintenance and repairs handled with professional care.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="section-padding dark-bg">
-        <h2>Get a Quote</h2>
-        <div class="contact-box">
-            <p>Send me a message with your photos, location, and project details.</p>
-            <a href="tel:07474943230" class="phone-link">0747 494 3230</a>
-            <p class="availability">Usually replies within minutes.</p>
-        </div>
-    </section>
+        <section id="portfolio" class="fade-in">
+            <div class="section-header">
+                <h2>Portfolio</h2>
+                <p>Clean, sharp finishes and complete transformations.</p>
+            </div>
+            <div class="grid-gallery">
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=600&q=80" alt="Portfolio 1"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=600&q=80" alt="Portfolio 2"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80" alt="Portfolio 3"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?auto=format&fit=crop&w=600&q=80" alt="Portfolio 4"></div>
+            </div>
+        </section>
+
+        <section id="contact" class="split-layout fade-in">
+            <div class="content-left">
+                <h2>Get a Quote</h2>
+                <p>Professional, tidy, and respectful in your home. Send me a message with photos of the job, location, and what you need done. I reply within minutes.</p>
+                <div class="contact-details">
+                    <p class="phone-number">0747 494 3230</p>
+                </div>
+            </div>
+            <div class="image-right">
+                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=80" alt="Contact Zoli">
+            </div>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2026 Zoli Painting & Decorating. All rights reserved.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
